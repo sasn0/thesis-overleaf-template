@@ -29,6 +29,8 @@
 \usepackage{graphicx}
 \usepackage{multirow}
 \usepackage{url}
+\usepackage{lipsum}
+\usepackage{color}
 \bibliographystyle{jplain}
 
 \bindermode  % バインダー用余白設定
@@ -68,7 +70,7 @@
   \emaketitle    % 表紙（英語）
 \fi
 
-\include{00_abstract}  % アブストラクト．要独自コマンド，include先参照のこと
+\include{chapters/00_abstract}  % アブストラクト．要独自コマンド，include先参照のこと
 
 \tableofcontents  % 目次
 \listoffigures    % 表目次
@@ -81,11 +83,9 @@
 \include{chapters/03}  % 本文3
 \include{chapters/04}  % 本文4
 
-\include{chapters/summery.tex} %結論
-
 \include{chapters/90_acknowledgment}  % 謝辞．要独自コマンド，include先参照のこと
-\include{91_bibliography}  % 参考文献．要独自コマンド，include先参照のこと
+\include{bib/91_bibliography}  % 参考文献．要独自コマンド，include先参照のこと
 \appendix
-\include{92_appendix}    % 付録
+\include{appendix/92_appendix}    % 付録
 
 \end{document}
